@@ -1,0 +1,422 @@
+.main {
+    margin-top: rem(50);
+
+    .hero_section {
+        background: url('../images/desktop/hero_ipadpro_large.jpg');
+        width: 100%;
+        height: rem(620);
+        background-position: center 0;
+        background-size: rem(3008) rem(620);
+        background-repeat: no-repeat;
+        margin: auto;
+        margin-bottom: rem(10);
+
+        @media (min-width: rem(1920)) {
+            margin-top: rem(-86);
+            height: rem(780);
+            background-position: center 0;
+            background-size: rem(3008) rem(780);
+        }
+
+
+        @include breakpointDown(mobile) {
+            background: url('../images/mobile/hero_ipadpro_small.jpg');
+            width: rem(734);
+            height: rem(560);
+            background-size: rem(734) rem(560);
+            background-position: center 0;
+            background-repeat: no-repeat;
+            margin: auto;
+            margin-bottom: rem(13);
+        }
+
+
+        .content {
+
+
+            @include breakpointDown(mobile) {
+                margin-top: rem(20);
+            }
+
+    
+            @media (min-width: rem(1920)) {
+                margin-top: rem(80);
+            }
+
+        }
+    }
+
+    .hero_section,
+    .ipad_section,
+    .iphone_section {
+        padding-top: 80px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+
+        .content {
+            z-index: 1;
+
+            @include breakpointDown(mobile) {
+                max-width: 95%;
+                margin-right: auto;
+                margin-left: auto;
+
+            }
+
+        }
+
+        @include breakpointDown(mobile) {
+            padding-top: rem(50);
+        }
+
+
+        .heading-img {
+            background: url('../images/desktop/hero_logo_ipadair_large.png');
+            width: 100%;
+            height: 45px;
+            background-size: 201px 45px;
+            background-repeat: no-repeat;
+            background-position: center 0;
+
+            @include breakpointDown(mobile) {
+                background: url('../images/mobile/hero_logo_ipadair_small.png');
+                height: 26px;
+                background-size: 114px 26px;
+                background-repeat: no-repeat;
+                background-position: center 0;
+                margin-bottom: 15px;
+            }
+
+        }
+    }
+
+    .ipad_section {
+        padding-top: 0;
+
+        background: url('../images/desktop/hero_ipadair_large.jpg');
+        width: 100%;
+        height: rem(620);
+        background-size: rem(3008) rem(620);
+        background-repeat: no-repeat;
+        background-position: center 0;
+        margin: auto;
+        margin-bottom: rem(15);
+
+        @include breakpointDown(mobile) {
+            background: url('../images/mobile/hero_ipadair_small.jpg');
+            width: 100%;
+            height: rem(500);
+            background-size: rem(734) rem(500);
+            background-position: center 0;
+            background-repeat: no-repeat;
+            margin: auto;
+            margin-bottom: rem(13);
+
+            .hero_title {
+                color: $globalnav-link-text-color;
+            }
+        }
+
+        .content {
+            margin-top: rem(40);
+
+        }
+
+
+
+    }
+
+    .iphone_section {
+        background: url('../images/desktop/hero_iphone15pro.jpg');
+        width: 100%;
+        height: rem(620);
+        background-position: center 0;
+        background-size: rem(3008) rem(620);
+        background-repeat: no-repeat;
+        margin: auto;
+        margin-bottom: rem(16);
+
+        @include breakpointDown(desktop) {
+            background: url('../images/desktop/hero_iphone15pro_medium.jpg');
+            width: 100%;
+            height: 570px;
+            background-size: 1068px 570px;
+            background-repeat: no-repeat;
+            background-position: center 0;
+            margin: auto;
+            margin-bottom: rem(16);
+        }
+
+        @include breakpointDown(mobile) {
+            background: url('../images/mobile/hero_iphone15pro_small.jpg');
+            width: 100%;
+            height: rem(500);
+            background-size: rem(734) rem(500);
+            background-repeat: no-repeat;
+            background-position: center 0;
+            margin: auto;
+            margin-bottom: rem(16);
+
+        }
+
+
+    }
+
+    .section_grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        gap: rem(12);
+        width: 98%;
+        margin: auto;
+
+        @media (min-width: rem(3440)) {
+            width: 80%;
+        }
+
+
+        @include breakpointDown(mobile) {
+            grid-template-columns: 1fr;
+            width: 100%;
+        }
+
+        .col-md-6 {
+            position: relative;
+        }
+
+        .wwdc24 {
+            background: url('../images/desktop/promo_wwdc24_announce.jpg');
+            width: 100%;
+            height: 580px;
+            background-size: 1262px 580px;
+            background-position: center 0;
+            background-repeat: no-repeat;
+
+            .headline {
+                font-size: rem(20);
+                max-width: rem(375);
+                margin: auto;
+            }
+
+            @include breakpointDown(desktop) {
+                background: url('../images/desktop/promo_wwdc24_announce_medium.jpg');
+                width: 100%;
+                height: 490px;
+                background-size: 516px 490px;
+                background-repeat: no-repeat;
+            }
+
+            @include breakpointDown(tablet) {
+                background-size: 516px 490px;
+            }
+
+            @include breakpointDown(mobile) {
+                background: url('../images/mobile/promo_wwdc24_announce_small.jpg');
+                max-width: 100%;
+                height: 500px;
+                background-size: 734px 500px;
+                background-repeat: no-repeat;
+                background-position: center 0;
+            }
+
+            @media (min-width: rem(3440)) {
+                background-size: cover;
+                height: rem(880);
+            }
+        }
+
+        .college {
+            background: url('../images/desktop/promo_college_students_large.jpg');
+            width: 100%;
+            height: 580px;
+            background-size: 1262px 580px;
+            background-repeat: no-repeat;
+            background-position: center 0;
+
+
+
+            @include breakpointDown(desktop) {
+                background: url('../images/desktop/promo_college_students_medium.jpg');
+                width: 100%;
+                height: 490px;
+                background-size: 516px 490px;
+                background-repeat: no-repeat;
+            }
+
+            @include breakpointDown(tablet) {
+                background-size: 516px 490px;
+            }
+
+            @include breakpointDown(mobile) {
+                background: url('../images/mobile/promo_college_students_small.jpg');
+                max-width: 100%;
+                height: 500px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center 0;
+            }
+
+            @media (min-width: rem(3440)) {
+                background-size: cover;
+                height: rem(880);
+            }
+
+        }
+
+        .macbook {
+            background: url('../images/desktop/promo_macbook_air.jpg');
+            width: 100%;
+            height: 580px;
+            background-size: 1262px 580px;
+            background-repeat: no-repeat;
+            background-position: center 0;
+
+            @include breakpointDown(desktop) {
+                background: url('../images/desktop/promo_macbook_air_medium.jpg');
+                width: 100%;
+                height: 490px;
+                background-size: 516px 490px;
+                background-repeat: no-repeat;
+            }
+
+            @include breakpointDown(tablet) {
+                background-size: 516px 490px;
+            }
+
+            @include breakpointDown(mobile) {
+                background: url('../images/mobile/promo_macbook_air_small.jpg');
+                max-width: 100%;
+                height: 500px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center 0;
+            }
+
+            @media (min-width: rem(3440)) {
+                background-size: cover;
+                height: rem(880);
+            }
+        }
+
+        .iphone {
+            background: url('../images/desktop/promo_iphone15_announce_large.jpg');
+            width: 100%;
+            height: 580px;
+            background-size: 1262px 580px;
+            background-repeat: no-repeat;
+            background-position: center 0;
+
+            @include breakpointDown(desktop) {
+                background: url('../images/desktop/promo_iphone15_announce_medium.jpg');
+                width: 100%;
+                height: 490px;
+                background-size: 516px 490px;
+                background-repeat: no-repeat;
+            }
+
+            @include breakpointDown(mobile) {
+                background: url('../images/mobile/promo_iphone15_announce_small.jpg');
+                max-width: 100%;
+                height: 500px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center 0;
+            }
+
+            @media (min-width: rem(3440)) {
+                background-size: cover;
+                height: rem(880);
+            }
+        }
+
+        .apple_card {
+            background: url('../images/desktop/tile__cauwwcyyn9hy_large.jpg');
+            width: 100%;
+            height: 580px;
+            background-size: 1262px 580px;
+            background-repeat: no-repeat;
+            background-position: center 0;
+
+            @include breakpointDown(desktop) {
+                background: url('../images/desktop/tile_medium.jpg');
+                width: 100%;
+                height: 490px;
+                background-size: 516px 490px;
+                background-repeat: no-repeat;
+            }
+
+            @include breakpointDown(mobile) {
+                background: url('../images/mobile/tile__cauwwcyyn9hy_small.jpg');
+                max-width: 100%;
+                height: 500px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center 0;
+            }
+
+            @media (min-width: rem(3440)) {
+                background-size: cover;
+                height: rem(880);
+            }
+        }
+
+        .trade {
+            background: url('../images/desktop/promo_iphone_tradein_large.jpg');
+            width: 100%;
+            height: 580px;
+            background-size: 1262px 580px;
+            background-repeat: no-repeat;
+            background-position: center 0;
+
+            @include breakpointDown(desktop) {
+                background: url('../images/desktop/promo_iphone_tradein_medium.jpg');
+                width: 100%;
+                height: 490px;
+                background-size: 516px 490px;
+                background-repeat: no-repeat;
+            }
+
+            @include breakpointDown(mobile) {
+                background: url('../images/mobile/promo_iphone_tradein_small.jpg');
+                max-width: 100%;
+                height: 500px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center 0;
+            }
+
+            sup {
+                font-size: rem(14);
+            }
+
+            @media (min-width: rem(3440)) {
+                background-size: cover;
+                height: rem(880);
+            }
+        }
+
+
+
+        .content {
+            text-align: center;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            margin: auto;
+        }
+
+        .bottom {
+            bottom: rem(50);
+        }
+
+        .top {
+            top: rem(50)
+        }
+    }
+}

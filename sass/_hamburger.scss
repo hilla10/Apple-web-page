@@ -1,0 +1,30 @@
+.hamburger {
+    display: block;
+
+    @include breakpointDown(tablet) {
+        display: block;
+        position: absolute;
+        top: rem(14);
+        right: rem(18);
+        z-index: 5;
+        cursor: pointer;
+
+        .bar {
+            width: rem(18);
+            background-color: $globalnav-color;
+            height: rem(2);
+            margin: .4rem 0;
+            transition: transform .5s ease-in-out;
+        }
+
+        &.active {
+            .bar:first-child {
+                transform: rotate(45deg) translate(5px, 1px);
+            }
+
+            .bar:last-child {
+                transform: rotate(-45deg) translate(5px, -1px);
+            }
+        }
+    }
+}
